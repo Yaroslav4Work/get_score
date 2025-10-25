@@ -42,6 +42,12 @@ pub fn get_score(game_stamps: &[Stamp], offset: i32) -> (i32, i32) {
 
 This solution is the best because it has a good balance between execution time and ease of implementation.
 
+Approximate stages of reasoning:
+
+1. I look at the generate_game and generate_stamp functions and see a limited ordered set of data;
+2. I think of greedy algorithms, "divide and conquer", and quicksort;
+3. I am thinking of writing an algorithm that is the inverse of quicksort since the data set is limited and finite.
+
 ### Ambiguities in the task
 
 1. Due to the lack of clarity in error handling and task completion criteria, several variants of the get_score function
